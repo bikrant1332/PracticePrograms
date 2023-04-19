@@ -1,8 +1,3 @@
-package hungers.practice.bj.interviewquestions;
-
-import java.util.ArrayList;
-import java.util.List;
-
 //Second round interview in oracle
 public class PermutationOfString {
 	//static List<String> list= new ArrayList<String>();
