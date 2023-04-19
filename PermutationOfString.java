@@ -2,7 +2,7 @@
 public class PermutationOfString {
 	//static List<String> list= new ArrayList<String>();
 	public static void main(String[] args) {
-		String str = "cat";
+		String str = "abcd";
 		stringPermuteAndPrint("", str);
 	}
 	private static void stringPermuteAndPrint(String firstChar, String word) {
