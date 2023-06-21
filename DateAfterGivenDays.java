@@ -21,7 +21,7 @@ public class DateAfterGivenDays {
 		while (true) {
 			System.out.println("day: "+day+" month: "+month+" year: "+year);
 			int diff = addDay - (refYear[month - 1] - day);
-			System.out.println("day: "+day+" month: "+month+" year: "+year+" diff : "+diff);
+			System.out.println("Diff: "+diff);
 			if (diff > 0) {
 				addDay = diff;
 				month++;
@@ -38,7 +38,7 @@ public class DateAfterGivenDays {
 			refYear=year%4==0?leapYear:normalYear;
 		}
 
-		System.out.println(year + "-" + month + "-" + day);
+		System.out.println("in calaculated : "+year + "-" + month + "-" + day);
 
 	}
 	
@@ -48,5 +48,5 @@ public class DateAfterGivenDays {
 
 	private static void calculateDateAfterDaysUsingJava8(int dd, int mm, int yyyy, int days) {
 		LocalDate date = LocalDate.of(yyyy, mm, dd).plusDays(days);
-		System.out.println(date);
+		System.out.println("in java8 : "+date);
 	}
